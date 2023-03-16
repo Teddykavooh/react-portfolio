@@ -22,7 +22,7 @@ const Contact = () => {
     emailjs
       .sendForm(
         //service_id
-        'service_rezgqli',
+        'service_m4lqkpu',
         //template_id
         'template_3cs02e9',
         //form_ref
@@ -67,7 +67,7 @@ const Contact = () => {
                   <input
                     type="email"
                     name="email"
-                    placeholder="E-Mail"
+                    placeholder="E-mail"
                     required
                   />
                 </li>
