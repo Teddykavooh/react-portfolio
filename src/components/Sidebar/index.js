@@ -4,7 +4,11 @@ import LogoS from '../../assets/images/logo-s.png'
 import LogoSubtitle from '../../assets/images/logo_sub.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
-import { faLinkedin, faTwitter, faGithub, faStackOverflow } from '@fortawesome/free-brands-svg-icons'
+import {
+  faLinkedin,
+  faGithub,
+  faStackOverflow,
+} from '@fortawesome/free-brands-svg-icons'
 // import { FaLinkedin } from 'react-icons/fa'
 
 const Sidebar = () => (

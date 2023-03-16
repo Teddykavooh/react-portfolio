@@ -54,8 +54,8 @@ const Contact = () => {
           </h1>
           <p>
             I am interested in freelance opportunities - especially on ambitious
-            or large projects. However, if you have any other requests or
-            questions, don't hesitate to contact me using below form either.
+            and large projects. However, if you have any other requests or
+            questions, contact me using the form below.
           </p>
           <div className="contact-form">
             <form ref={refForm} onSubmit={sendMail}>
@@ -97,7 +97,7 @@ const Contact = () => {
           <span>teddykavooh@gmail.com</span>
         </div>
         <div className="map-wrap">
-          <MapContainer center={position} zoom={15} scrollWheelZoom={false}>
+          <MapContainer center={position} zoom={10} scrollWheelZoom={false}>
             <TileLayer
               attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

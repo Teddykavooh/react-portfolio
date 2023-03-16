@@ -33,18 +33,17 @@ const About = () => {
             />
           </h1>
           <p>
-            I'm a very ambitious front-end developer looking for a role in an
-            established IT company with the opportunity to work with the latest
-            technologies on challenging and diverse projects.
+            I'm a very ambitious developer looking for a role with the
+            opportunity to work with the latest technologies on challenging and
+            diverse projects.
           </p>
           <p align="LEFT">
-            I'm quiet confident, naturally curious, and perpetually working on
-            improving my chops one design problem at a time.
+            I am confident, naturally curious, and always working on improving
+            my capabilities one step at a time.
           </p>
           <p>
-            If I need to define myself in one sentence that would be a family
-            person, father of a beautiful daughter, a sports fanatic,
-            photography enthusiast, and tech-obsessed!!!
+            In one sentence, "I am a highly motivated person, a sports fanatic,
+            an environment and technology enthusiast.
           </p>
         </div>
         <div className="stage-cube-cont">
