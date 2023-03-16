@@ -38,7 +38,8 @@
   animation-delay: 1s;
 }
 
-.about-page {
+.about-page,
+.contact-page {
   .text-zone {
     position: absolute;
     left: 10%;
@@ -84,7 +85,7 @@
     }
 
     p {
-      font-style: 13px;
+      font-size: 15px;
       color: #fff;
       font-family: 'Courier New', Courier, monospace;
       font-weight: 300;
