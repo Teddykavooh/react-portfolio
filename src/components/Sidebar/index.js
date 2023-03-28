@@ -1,7 +1,7 @@
 import { Link, NavLink } from 'react-router-dom'
 import './index.scss'
-import LogoS from '../../assets/images/logo-s.png'
-import LogoSubtitle from '../../assets/images/logo_sub.png'
+import LogoS from '../../assets/images/logo-a-big.png'
+import LogoSubtitle from '../../assets/images/logo-sub2.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
 import {
@@ -45,7 +45,7 @@ const Sidebar = () => (
           rel="noreferrer"
           href="https://www.linkedin.com/in/antony-kavoo-b336a9169/"
         >
-          <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
+          <FontAwesomeIcon icon={faLinkedin} />
           {/* <FaLinkedin /> */}
         </a>
       </li>
@@ -55,7 +55,7 @@ const Sidebar = () => (
           rel="noreferrer"
           href="https://github.com/Teddykavooh"
         >
-          <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
+          <FontAwesomeIcon icon={faGithub} />
           {/* <FaLinkedin /> */}
         </a>
       </li>
@@ -65,7 +65,7 @@ const Sidebar = () => (
           rel="noreferrer"
           href="https://stackoverflow.com/users/16946743/antony-kavoo"
         >
-          <FontAwesomeIcon icon={faStackOverflow} color="#4d4d4e" />
+          <FontAwesomeIcon icon={faStackOverflow} />
           {/* <FaLinkedin /> */}
         </a>
       </li>
