@@ -1,22 +1,22 @@
 .logo-container {
   z-index: 0;
   width: 400px;
-  height: 609px;
+  height: 600px;
   position: absolute;
   top: 0;
-  right: 15%;
+  right: 10%;
   bottom: 0;
   left: auto;
   margin: auto;
-  // background-color: aliceblue;
+  background-color: aliceblue;
   opacity: 0;
 
-  svg {
-    width: 100%;
-    height: auto;
-    bottom: 0;
-    transform: rotateZ(30deg) !important;
-  }
+  // svg {
+  //   width: 100%;
+  //   height: auto;
+  //   bottom: 0;
+  //   transform: rotateZ(30deg) !important;
+  // }
 
   .solid-logo {
     position: absolute;
@@ -32,7 +32,40 @@
   }
 }
 
-.svg-container {
-  stroke: #ffd700;
-  stroke-width: 10px;
+// .svg-container {
+//   stroke: #ffd700;
+//   stroke-width: 10px;
+// }
+
+@media only screen and (max-width: 1400px) {
+  .logo-container {
+    right: 5%;
+  }
+}
+
+@media only screen and (max-width: 1110px) {
+  .logo-container {
+    right: 2%;
+    width: 380px;
+    // height: auto;
+  }
+}
+
+// @media (max-width: 1055px) {
+//   .logo-container {
+//     right: 0.5%;
+//   }
+// }
+
+@media only screen and (max-width: 1024px) {
+  .logo-container {
+    right: 1%;
+    width: 370px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .logo-container {
+    width: 360px;
+  }
 }
