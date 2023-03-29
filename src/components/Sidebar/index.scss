@@ -76,6 +76,8 @@
       &:first-child {
         &::after {
           content: 'HOME';
+          font-size: 1.3rem;
+          font-weight: 700;
         }
       }
     }
@@ -83,12 +85,16 @@
     a.about-link {
       &::after {
         content: 'ABOUT';
+        font-size: 1.3rem;
+        font-weight: 700;
       }
     }
 
     a.contact-link {
       &::after {
         content: 'CONTACT';
+        font-size: 1.3rem;
+        font-weight: 700;
       }
     }
 
