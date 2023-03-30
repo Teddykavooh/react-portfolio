@@ -89,8 +89,41 @@
 }
 
 @media only screen and (max-width: 992px) {
-  .text-zone {
-    width: 35%;
-    left: 1rem;
+  .home-page {
+    .text-zone {
+      top: 40%;
+      width: 50%;
+      left: 3%;
+      // background-color: aqua;
+    }
+  }
+}
+
+@media only screen and (max-width: 910px) {
+  .home-page {
+    .text-zone {
+      left: 2%;
+      // background-color: aqua;
+    }
+  }
+
+  .tags {
+    left: 1%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .home-page {
+    .text-zone {
+      left: 1.5%;
+      // background-color: aqua;
+    }
+  }
+
+  .logo-container {
+    height: 300px;
+    width: auto;
+    top: -20%;
+    background-color: aliceblue;
   }
 }

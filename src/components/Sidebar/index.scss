@@ -176,12 +176,33 @@
     nav {
       display: flex;
       justify-content: space-evenly;
-      width: 150px;
+      width: 250px;
       height: 100%;
       position: relative;
       top: 0;
       margin-top: 0;
       align-items: center;
+      padding: auto;
+
+      // a {
+      //   &:first-child {
+      //     &::after {
+      //       padding: 0;
+      //     }
+      //   }
+      // }
+
+      // a.about-link {
+      //   &::after {
+      //     color: ;
+      //   }
+      // }
+
+      // a.contact-link {
+      //   &::after {
+      //     padding: 0;
+      //   }
+      // }
     }
 
     ul {

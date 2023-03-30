@@ -114,3 +114,21 @@
     }
   }
 }
+
+@media only screen and (max-width: 992px) {
+  .page {
+    top: 10%;
+  }
+
+  .tags {
+    left: 2%;
+  }
+
+  .about-page,
+  .contact-page {
+    .text-zone {
+      top: 40%;
+      left: 7%;
+    }
+  }
+}

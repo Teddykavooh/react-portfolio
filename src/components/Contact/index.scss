@@ -85,7 +85,7 @@
   top: 1%;
   right: 1%;
   z-index: 999999;
-  width: 160px;
+  width: auto;
   padding: 20px;
   color: App.$text-primary-color;
   font-family: 'Helvetica';
@@ -121,4 +121,7 @@
   opacity: 0;
   animation: backInRight 1s 1.2s;
   animation-fill-mode: forwards;
+}
+
+@media only screen and (max-width: 992px) {
 }
