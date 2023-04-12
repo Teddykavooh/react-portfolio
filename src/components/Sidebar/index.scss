@@ -157,18 +157,20 @@
     min-height: 100px;
 
     .logo {
-      width: auto;
+      width: 100px;
       height: auto;
       padding: 0;
       display: flex;
+      flex-direction: column;
+      justify-content: center;
 
       img {
         margin: auto;
-        width: 70px;
+        width: 55px;
 
         &.sub-logo {
           width: auto;
-          height: 25%;
+          height: 12.5%;
         }
       }
     }
@@ -215,4 +217,7 @@
       align-items: center;
     }
   }
+}
+
+@media only screen and (max-width: 700px) {
 }
