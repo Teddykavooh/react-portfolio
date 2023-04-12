@@ -134,6 +134,10 @@
       }
     }
   }
+
+  .hamburger-react {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 1100px) {
@@ -220,4 +224,18 @@
 }
 
 @media only screen and (max-width: 700px) {
+  .nav-bar {
+    nav {
+      display: none;
+    }
+
+    ul {
+      display: none;
+    }
+    .hamburger-react {
+      display: flex;
+      align-self: center;
+      right: 10px;
+    }
+  }
 }
