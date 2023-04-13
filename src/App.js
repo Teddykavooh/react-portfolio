@@ -1,10 +1,11 @@
 // import logo from './logo.svg';
-import './App.scss';
-import {Routes, Route} from 'react-router-dom'
+import './App.scss'
+import { Routes, Route } from 'react-router-dom'
 import Layout from './components/Layout'
 import Home from './components/Home'
-import About from './components/About';
-import Contact from './components/Contact';
+import About from './components/About'
+import Contact from './components/Contact'
+import Trials from './components/Trials'
 
 function App() {
   return (
@@ -32,8 +33,9 @@ function App() {
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
       </Route>
+      <Route path="/trials" element={<Trials />} />
     </Routes>
   )
 }
 
-export default App;
+export default App

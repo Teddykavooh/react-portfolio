@@ -12,10 +12,10 @@ import {
 // import { FaLinkedin } from 'react-icons/fa'
 import { Twirl as Hamburger } from 'hamburger-react'
 import { useState } from 'react'
-import { bubble as Menu } from 'react-burger-menu'
 
 const Sidebar = () => {
   const [isOpen, setOpen] = useState(false)
+
   return (
     <div className="nav-bar">
       <Link className="logo" to="/">
@@ -75,6 +75,7 @@ const Sidebar = () => {
           </a>
         </li>
       </ul>
+      {/* Hamburger Menus */}
       <Hamburger
         rounded
         toggled={isOpen}
@@ -88,20 +89,6 @@ const Sidebar = () => {
           }
         }}
       />
-      <Menu right >
-        <a id="home" className="menu-item" href="/">
-          Home
-        </a>
-        <a id="about" className="menu-item" href="/about">
-          About
-        </a>
-        <a id="contact" className="menu-item" href="/contact">
-          Contact
-        </a>
-        <a onClick={this.showSettings} className="menu-item--small" href="">
-          Settings
-        </a>
-      </Menu>
     </div>
   )
 }
