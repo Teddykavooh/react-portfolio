@@ -1,0 +1,47 @@
+@use '../../App.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menu_bar {
+  background: App.$extra-color2;
+  width: 35%;
+  height: 100%;
+  position: absolute;
+  top: 12%;
+  z-index: 3;
+  min-height: 500px;
+  right: 0;
+  visibility: hidden;
+  display: flex;
+
+  ul {
+    list-style: none;
+    align-self: center;
+  }
+}
+
+/* ---------------- sliding menu ----------------- */
+.hidden {
+  display: none;
+}
+.visible {
+  display: inherit;
+}
+
+@media only screen and (max-width: 700px) {
+  .menu_bar {
+    visibility: visible;
+  }
+  .hamburger-react {
+    position: absolute !important;
+    display: flex;
+    align-self: center;
+    top: 2.5%;
+    right: 10px;
+    z-index: 3;
+  }
+}

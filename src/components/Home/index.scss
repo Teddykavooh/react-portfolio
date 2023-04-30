@@ -1,5 +1,11 @@
 @use '../../App.scss';
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .home-page {
   position: relative;
   .text-zone {
@@ -132,9 +138,12 @@
 @media only screen and (max-width: 886px) {
   .home-page {
     .text-zone {
-      left: 1.5%;
-      width: 100%;
+      left: 0;
+      padding-inline: 1.5%;
+      width: inherit;
       z-index: 1;
+      // border: 10px solid blue;
+      margin: auto;
     }
   }
 

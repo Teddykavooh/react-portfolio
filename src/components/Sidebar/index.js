@@ -10,12 +10,10 @@ import {
   faStackOverflow,
 } from '@fortawesome/free-brands-svg-icons'
 // import { FaLinkedin } from 'react-icons/fa'
-import { Twirl as Hamburger } from 'hamburger-react'
 import { useState } from 'react'
 
 const Sidebar = () => {
   const [isOpen, setOpen] = useState(false)
-
   return (
     <div className="nav-bar">
       <Link className="logo" to="/">
@@ -75,20 +73,6 @@ const Sidebar = () => {
           </a>
         </li>
       </ul>
-      {/* Hamburger Menus */}
-      <Hamburger
-        rounded
-        toggled={isOpen}
-        toggle={setOpen}
-        size={48}
-        onToggle={(toggled) => {
-          if (toggled) {
-            // open a menu
-          } else {
-            // close a menu
-          }
-        }}
-      />
     </div>
   )
 }

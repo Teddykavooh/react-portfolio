@@ -1,5 +1,11 @@
 @use '../../App.scss';
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .contact-form {
   width: 100%;
   margin-top: 20px;
