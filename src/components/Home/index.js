@@ -5,6 +5,7 @@ import AnimatedLetters from '../AnimatedLetters'
 import { useEffect, useState } from 'react'
 import Logo from '../Logo'
 import Loader from 'react-loaders'
+// import HeaderImage from '../HeaderImage'
 
 const Home = () => {
   // Letter animation
@@ -40,6 +41,7 @@ const Home = () => {
 
   return (
     <>
+      {/* <HeaderImage /> */}
       <div className="container home-page">
         <div className="text-zone">
           <h1>

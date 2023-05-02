@@ -1,0 +1,25 @@
+.header-img {
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 700px) {
+    .header-img {
+        position: absolute;
+        top: 0;
+        z-index: 3;
+        visibility: visible;
+        height: 30vh;
+        width: 100%;
+        // border: 2px solid yellow;
+
+        img {
+            width: inherit;
+            height: inherit;
+            object-fit: cover;
+        }
+    }
+
+    // .page {
+    //     height: 70vh;
+    // }
+}

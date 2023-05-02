@@ -149,26 +149,27 @@
 @media only screen and (max-width: 992px) {
   .nav-bar {
     width: 100%;
-    height: 10%;
+    height: 10vh;
     display: flex;
-    justify-content: space-between;
-    min-height: 100px;
+    justify-content: space-evenly;
+    min-height: 10vh;
 
     .logo {
-      width: 100px;
-      height: auto;
+      margin: auto 0;
+      width: 6vw;
+      height: 8vh;
       padding: 0;
       display: flex;
       flex-direction: column;
       justify-content: center;
+      align-items: center;
 
       img {
         margin: auto;
-        width: 55px;
+        width: 100%;
 
         &.sub-logo {
-          width: auto;
-          height: 12.5%;
+          position: relative;
         }
       }
     }
@@ -219,6 +220,12 @@
 
 @media only screen and (max-width: 700px) {
   .nav-bar {
+    // visibility: hidden;
+    flex-direction: column;
+    .logo {
+      align-self: flex-start;
+      padding-left: 1vw;
+    }
     nav {
       display: none;
     }
