@@ -89,14 +89,14 @@ const Contact = () => {
             </form>
           </div>
         </div>
-        <div className="info-map">
-          Antony Kavoo,
-          <br />
-          Murang'a, Kenya.
-          <br />
-          <span>teddykavooh@gmail.com</span>
-        </div>
         <div className="map-wrap">
+          <div className="info-map">
+            Antony Kavoo,
+            <br />
+            Murang'a, Kenya.
+            <br />
+            <span>teddykavooh@gmail.com</span>
+          </div>
           <MapContainer center={position} zoom={6.4} scrollWheelZoom={false}>
             <TileLayer
               attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'

@@ -10,54 +10,78 @@
   width: 100%;
   height: 100%;
   position: absolute;
-}
+  top: 0;
 
-.top-tags {
-  bottom: auto;
-  top: 35px;
-}
+  // .top-tags-body {
+  //   bottom: auto;
+  //   margin-left: 20px;
+  // }
 
-.tags {
-  color: App.$primary-color;
-  opacity: 0.6;
-  position: absolute;
-  bottom: 0;
-  left: 120px;
-  font-size: 18px;
-  font-family: 'La Belle Aurore';
-}
+  // .top-tags {
+  //   bottom: auto;
+  //   top: 1%;
+  //   margin-left: -20px;
+  // }
 
-.bottom-tag-html {
-  margin-left: -20px;
-}
+  // .bottom-tags {
+  //   bottom: 1%;
+  // }
 
-.container {
-  width: 100%;
-  will-change: contents;
-  height: 90%;
-  min-height: 566px;
-  position: absolute;
-  opacity: 0;
-  top: 5%;
-  margin: 0 auto;
-  z-index: 0;
-  // border: 10px solid blue;
-  transform-style: preserve-3d;
-  animation: fadeIn 1s forwards;
-  animation-delay: 1s;
+  .tags {
+    color: App.$primary-color;
+    opacity: 0.6;
+    position: absolute;
+    bottom: 1%;
+    left: 10%;
+    font-size: 18px;
+    font-family: 'La Belle Aurore';
+  }
+
+  .top-tags {
+    top: 1%;
+  }
+
+  .mid-tags {
+    margin-left: 20%;
+  }
+
+  .bottom-tag-html {
+    margin-left: -20px;
+    // bottom: 0;
+  }
+
+  .container {
+    width: 100%;
+    // height: 100%;
+    will-change: contents;
+    max-height: 100%;
+    min-height: 566px;
+    position: absolute;
+    opacity: 0;
+    margin: 0 auto;
+    z-index: 0;
+    // border: 10px solid blue;
+    transform-style: preserve-3d;
+    animation: fadeIn 1s forwards;
+    animation-delay: 1s;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
 
 .about-page,
 .contact-page {
   .text-zone {
     position: absolute;
-    left: 10%;
+    left: 11.2%;
     top: 50%;
     transform: translateY(-50%);
     width: 35%;
     vertical-align: middle;
-    display: table-cell;
-    max-height: 90%;
+    // display: table-cell;
+    height: auto;
+    max-height: 100%;
+    // border: 5px solid #000;
 
     h1 {
       font-size: 53px;
@@ -125,17 +149,39 @@
 @media only screen and (max-width: 992px) {
   .page {
     top: 10%;
-  }
+    height: 90%;
 
-  .tags {
-    left: 2%;
-  }
+    .tags {
+      left: 0;
+      bottom: 0;
+    }
 
-  .about-page,
+    .top-tags {
+      top: 0.5%;
+    }
+
+    .container {
+      height: 80%;
+    }
+
+    .contact-page {
+      .text-zone {
+        left: 2%;
+        width: 45%;
+        // border: 2px solid yellow;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
   .contact-page {
+    z-index: 4;
+    height: 85% !important;
     .text-zone {
-      top: 40%;
-      left: 7%;
+      h1 {
+        font-size: 4vh;
+      }
     }
   }
 }

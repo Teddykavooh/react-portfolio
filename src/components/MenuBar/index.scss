@@ -7,15 +7,15 @@
 }
 
 .menu_bar {
-  background: App.$extra-color2;
+  // background: App.$extra-color2;
+  background: #ddd;
   width: 35%;
   height: 100%;
   position: absolute;
-  top: 12%;
+  top: 10%;
   z-index: 3;
   min-height: 500px;
   right: 0;
-  visibility: hidden;
   display: flex;
 
   ul {
@@ -33,9 +33,6 @@
 }
 
 @media only screen and (max-width: 700px) {
-  .menu_bar {
-    visibility: visible;
-  }
   .hamburger-react {
     position: absolute !important;
     display: flex;

@@ -5,19 +5,23 @@ import MenuBar from '../MenuBar'
 
 const Layout = () => {
   return (
-    <div className="App">
+    <>
       <Sidebar />
       <MenuBar />
       <div className="page">
-        <span className="tags top-tags">&lt;body&gt;</span>
-        <Outlet />
-        <span className="tags bottom-tags">
-          &lt;/body&gt;
+        <span className="tags top-tags">
+          &lt;html&gt;
           <br />
-          <span className="bottom-tag-html">&lt;/html&gt;</span>
+          <span className="mid-tags">&lt;body&gt;</span>
+        </span>
+        <Outlet />
+        <span className="tags">
+          <span className="mid-tags">&lt;/body&gt;</span>
+          <br />
+          &lt;/html&gt;
         </span>
       </div>
-    </div>
+    </>
   )
 }
 
