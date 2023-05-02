@@ -156,8 +156,8 @@
 
     .logo {
       margin: auto 0;
-      width: 6vw;
-      height: 8vh;
+      width: 100px;
+      height: auto;
       padding: 0;
       display: flex;
       flex-direction: column;
@@ -166,7 +166,7 @@
 
       img {
         margin: auto;
-        width: 100%;
+        width: 55px;
 
         &.sub-logo {
           position: relative;
