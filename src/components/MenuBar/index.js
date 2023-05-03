@@ -16,6 +16,11 @@ const MenuBar = () => {
   const [menu_class, setMenuClass] = useState('menu_bar hidden')
   const [isOpen, setOpen] = useState(false)
 
+  const hidder = () => {
+    setOpen(!isOpen)
+    setMenuClass('menu_bar hidden')
+  }
+
   return (
     <>
       <div className="hambg-cont">
@@ -37,63 +42,76 @@ const MenuBar = () => {
         />
       </div>
       <div className={menu_class}>
-        <Link className="logo" to="/">
-          <img src={LogoS} alt="logo" />
-          <img className="sub-logo" src={LogoSubtitle} alt="logo_sub" />
-        </Link>
-        <nav>
-          <NavLink exact="true" activeclassname="active" to="/">
-            <FontAwesomeIcon icon={faHome} />
-          </NavLink>
-          <NavLink
-            exact="true"
-            activeclassname="active"
-            to="/about"
-            className="about-link"
-          >
-            <FontAwesomeIcon icon={faUser} />
-          </NavLink>
-          <NavLink
-            exact="true"
-            activeclassname="active"
-            to="/contact"
-            className="contact-link"
-          >
-            <FontAwesomeIcon icon={faEnvelope} />
-          </NavLink>
-        </nav>
-        <ul>
-          <li>
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://www.linkedin.com/in/antony-kavoo-b336a9169/"
+        <div className="children-cont">
+          <Link className="logo" to="/" onClick={hidder}>
+            <img src={LogoS} alt="logo" />
+            <img className="sub-logo" src={LogoSubtitle} alt="logo_sub" />
+          </Link>
+          <nav>
+            <NavLink
+              exact="true"
+              activeclassname="active"
+              to="/"
+              onClick={hidder}
             >
-              <FontAwesomeIcon icon={faLinkedin} />
-              {/* <FaLinkedin /> */}
-            </a>
-          </li>
-          <li>
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://github.com/Teddykavooh"
+              <FontAwesomeIcon icon={faHome} />
+            </NavLink>
+
+            <NavLink
+              exact="true"
+              activeclassname="active"
+              to="/about"
+              className="about-link"
+              onClick={hidder}
             >
-              <FontAwesomeIcon icon={faGithub} />
-              {/* <FaLinkedin /> */}
-            </a>
-          </li>
-          <li>
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://stackoverflow.com/users/16946743/antony-kavoo"
+              <FontAwesomeIcon icon={faUser} />
+            </NavLink>
+            <NavLink
+              exact="true"
+              activeclassname="active"
+              to="/contact"
+              className="contact-link"
+              onClick={hidder}
             >
-              <FontAwesomeIcon icon={faStackOverflow} />
-              {/* <FaLinkedin /> */}
-            </a>
-          </li>
-        </ul>
+              <FontAwesomeIcon icon={faEnvelope} />
+            </NavLink>
+          </nav>
+          <ul>
+            <li>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.linkedin.com/in/antony-kavoo-b336a9169/"
+                onClick={hidder}
+              >
+                <FontAwesomeIcon icon={faLinkedin} />
+                {/* <FaLinkedin /> */}
+              </a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://github.com/Teddykavooh"
+                onClick={hidder}
+              >
+                <FontAwesomeIcon icon={faGithub} />
+                {/* <FaLinkedin /> */}
+              </a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://stackoverflow.com/users/16946743/antony-kavoo"
+                onClick={hidder}
+              >
+                <FontAwesomeIcon icon={faStackOverflow} />
+                {/* <FaLinkedin /> */}
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </>
   )
