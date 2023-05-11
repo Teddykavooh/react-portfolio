@@ -31,22 +31,41 @@
     border: 2px solid App.$primary-color;
     animation: backInRight 1s 1.2s;
     animation-fill-mode: forwards;
+    align-items: center;
 
     .logo {
       display: flex;
       flex-direction: column;
-      padding: 8px 0;
+      // padding: 8px 0;
+      border: 2px solid App.$primary-color;
+      border-radius: 50%;
+      width: 150px;
+      min-width: 100px;
+      height: 150px;
+      min-height: 100px;
+      justify-content: center;
+      align-items: center;
 
       img {
-        display: flex;
-        margin: 8px auto;
-        width: 50px;
-        height: auto;
-
-        &.sub-logo {
-          width: 70px;
-        }
+        position: relative;
+        width: calc(100% - 2px);
+        height: calc(100% - 2px);
+        object-fit: cover;
+        border-radius: 50%;
+        object-position: center center; /* Adjust this value to zoom out and position the face */
+        // transform: scale(2);
       }
+
+      // img {
+      //   display: flex;
+      //   margin: 8px auto;
+      //   width: 50px;
+      //   height: auto;
+
+      //   &.sub-logo {
+      //     width: 70px;
+      //   }
+      // }
     }
 
     nav {
@@ -190,6 +209,27 @@
     .hamburger-react {
       position: relative;
       color: white;
+    }
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .menu_bar {
+    .children-cont {
+      .logo {
+        width: 90%;
+        height: 0;
+        padding-top: 90%; /* Set the padding-top to the same value as the width */
+        border: 2px solid App.$primary-color; /* Add border styles to the container */
+        background-image: url('../../assets/images/pp-min.jpg');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+
+        img {
+          visibility: hidden;
+        }
+      }
     }
   }
 }

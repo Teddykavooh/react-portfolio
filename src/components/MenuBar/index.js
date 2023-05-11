@@ -2,8 +2,8 @@ import './index.scss'
 import { useState } from 'react'
 import { Twirl as Hamburger } from 'hamburger-react'
 import { Link, NavLink } from 'react-router-dom'
-import LogoS from '../../assets/images/logo-a-big.png'
-import LogoSubtitle from '../../assets/images/logo-sub2.png'
+import LogoS from '../../assets/images/pp-min.jpg'
+// import LogoSubtitle from '../../assets/images/pp-min.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
 import {
@@ -45,7 +45,7 @@ const MenuBar = () => {
         <div className="children-cont">
           <Link className="logo" to="/" onClick={hidder}>
             <img src={LogoS} alt="logo" />
-            <img className="sub-logo" src={LogoSubtitle} alt="logo_sub" />
+            {/* <img className="sub-logo" src={LogoSubtitle} alt="logo_sub" /> */}
           </Link>
           <nav>
             <NavLink
