@@ -2,7 +2,7 @@ import Sidebar from '../Sidebar'
 import './index.scss'
 import { Outlet } from 'react-router-dom'
 import MenuBar from '../MenuBar'
-import HeaderImage from '../HeaderImage'
+// import HeaderImage from '../HeaderImage'
 
 const Layout = () => {
   return (
