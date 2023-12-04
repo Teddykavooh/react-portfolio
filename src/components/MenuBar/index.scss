@@ -39,10 +39,10 @@
       // padding: 8px 0;
       border: 2px solid App.$primary-color;
       border-radius: 50%;
-      width: 150px;
-      min-width: 100px;
-      height: 150px;
-      min-height: 100px;
+      width: 40%;
+      min-width: 80px;
+      height: auto;
+      min-height: 80px;
       justify-content: center;
       align-items: center;
 
@@ -221,7 +221,7 @@
         height: 0;
         padding-top: 90%; /* Set the padding-top to the same value as the width */
         border: 2px solid App.$primary-color; /* Add border styles to the container */
-        background-image: url('../../assets/images/pp-min.jpg');
+        background-image: url('../../assets/images/pp-min-c.jpg');
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;

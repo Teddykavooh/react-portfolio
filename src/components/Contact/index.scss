@@ -140,33 +140,36 @@
 
 @media only screen and (max-width: 700px) {
   .contact-page {
-    position: relative;
-    display: flex;
     flex-direction: column-reverse;
-    justify-content: space-around;
-    align-items: center;
-    max-height: 100%;
     overflow-y: auto;
-    // border: 2px solid #ddd;
+    // border: 2px solid #ddd !important;
+    justify-content: space-between;
 
     /* Valid CSS comment */
     .text-zone {
       position: relative;
-      top: 0;
-      left: 0 !important;
-      width: 98% !important;
+      width: 100% !important;
       height: 59%;
-      transform: translateY(5%);
-      margin-top: -2rem;
-      overflow: scroll;
+      // transform: translateY(5%);
+      // margin-top: -2rem;
+      overflow: auto;
       // border: 2px solid blue;
+
+      p {
+        margin-top: 0;
+      }
+
+      .contact-form {
+        margin-top: 1vh;
+      }
     }
 
     .map-wrap {
       position: relative;
+      // flex: 40%;
       width: 100%;
       height: 40%;
-      top: 0;
+      // top: 0;
       // border: 2px solid plum;
     }
   }
