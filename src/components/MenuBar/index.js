@@ -5,7 +5,7 @@ import { Link, NavLink } from 'react-router-dom'
 import LogoS from '../../assets/images/pp-min-c.jpg'
 // import LogoSubtitle from '../../assets/images/pp-min.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faHome, faUser, faFolderOpen } from '@fortawesome/free-solid-svg-icons'
 import {
   faLinkedin,
   faGithub,
@@ -65,6 +65,15 @@ const MenuBar = () => {
               onClick={hidder}
             >
               <FontAwesomeIcon icon={faUser} />
+            </NavLink>
+            <NavLink
+              exact="true"
+              activeclassname="active"
+              to="/works"
+              className="works-link"
+              onClick={hidder}
+            >
+              <FontAwesomeIcon icon={faFolderOpen} />
             </NavLink>
             <NavLink
               exact="true"

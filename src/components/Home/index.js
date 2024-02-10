@@ -62,7 +62,7 @@ const Home = () => {
   for (let index = 0; index < greetings[randomGreetingIndex].length; index++) {
     greetingsOpt.push(greetings[randomGreetingIndex][index])
   }
-  console.log('Me greetings: ' + greetingsOpt)
+  // console.log('Me greetings: ' + greetingsOpt)
 
   const descriptionOpt = []
   for (
@@ -105,7 +105,7 @@ const Home = () => {
     setTimeout(() => {
       setLetterClass('text-animate-hover')
     }, 4000)
-    console.log('Triggered: ')
+    // console.log('Triggered: ')
   }, [])
 
   return (

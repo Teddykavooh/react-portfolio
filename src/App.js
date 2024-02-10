@@ -6,6 +6,7 @@ import Home from './components/Home'
 import About from './components/About'
 import Contact from './components/Contact'
 import Trials from './components/Trials'
+import { Works } from "./components/Works"
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
         <Route path="about" element={<About />} />
+        <Route path="works" element={<Works />} />
         <Route path="contact" element={<Contact />} />
       </Route>
       <Route path="/trials" element={<Trials />} />
