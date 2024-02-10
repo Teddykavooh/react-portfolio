@@ -18,6 +18,61 @@
   }
 }
 
+.p_section {
+  margin: 1vh auto;
+  width: 75vw;
+  background-color: aliceblue;
+  padding: 1vh;
+  font-size: 2rem;
+  
+  ul {
+    list-style: none;
+
+    li {
+      // color: App.$primary-dark-color;
+      a {
+        color: App.$primary-dark-color2;
+        text-decoration: none;
+        background-size: 200% 100%;
+        background-position: -100%;
+        display: inline-block;
+        padding: 5px 0;
+        position: relative;
+        transition: all 0.3s ease-in-out;
+      }
+      
+      a:before{
+        content: '';
+        background: #54b3d6;
+        display: block;
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0;
+        height: 3px;
+        transition: all 0.3s ease-in-out;
+
+      }
+      
+      a:hover {
+       background-position: 0;
+       background-image: linear-gradient(
+          to right,
+          #54b3d6,
+          #54b3d6 50%,
+          #000 50%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      
+      a:hover::before{
+        width: 100%;
+      }
+    }
+  }
+}
+
 @keyframes lights {
   0% {
     color: hsl(230, 40%, 80%);
@@ -66,23 +121,58 @@
   }
 }
 
-@media (max-width: 370px) {
-  .coming_soon_body{
-    width: 80vw;
-    height: 20vh;
+@media (max-width: 620px) {
+  .p_section {
+    font-size: 1.8rem;
   }
 }
 
-@media (max-width: 346px) {
+@media (max-width: 560px) {
+  .p_section {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .p_section {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 440px) {
+  .p_section {
+    width: 85vw;
+  }
+  .coming_soon_body{
+    width: 85vw;
+  }
+}
+
+@media (max-width: 388px) {
   .coming_soon_body{
     width: 90vw;
-    // height: 20vh;
+  }
+  .p_section{
+    width: 90vw;
   }
 }
 
-@media (max-width: 308px) {
+@media (max-width: 370px) {
+  .coming_soon_body{
+    // width: 80vw;
+    height: 20vh;
+  }
+  .p_section{
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 320px) {
   .coming_soon_body{
     width: 95vw;
-    height: 30vh;
+    height: 25vh;
+  }
+  .p_section{
+    width: 95vw;
   }
 }
