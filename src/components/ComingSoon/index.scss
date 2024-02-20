@@ -2,9 +2,10 @@
 
 .coming_soon_body {
   position: relative;
-  margin: auto;
+  // margin: auto;
   width: 75vw;
-  height: 10vh;
+  // min-height: 15vh; /* Set a minimum height */
+  // max-height: 70vh; /* Set a maximum height */
   background-color: App.$extra-color;
   display: flex;
   text-align: center;
@@ -12,18 +13,18 @@
 
   h2 {
     margin: auto;
-    font-size: 3.5rem;
+    font-size: 3vw;
     font-weight: 600;
     animation: lights 5s 750ms linear infinite;
   }
 }
 
 .p_section {
-  margin: 1vh auto;
+  // margin: 0.7vh auto 0 auto;
   width: 75vw;
   background-color: aliceblue;
   padding: 1vh;
-  font-size: 2rem;
+  font-size: 2vw;
   
   ul {
     list-style: none;
@@ -63,6 +64,7 @@
           #000 50%
         );
         -webkit-background-clip: text;
+        background-clip: to-upper-case($string: text);
         -webkit-text-fill-color: transparent;
       }
       

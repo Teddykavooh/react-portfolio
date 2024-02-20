@@ -2,7 +2,18 @@ import './index.scss'
 
 const ComingSoon = () => {
     return(
-        <>
+        <div
+            style={{
+                height: "100%",
+                // overflowY: "auto",
+                // display: "flex",
+                // flexDirection: "column",
+                // justifyContent: "space-evenly",
+                // minHeight: "82vh",
+                // alignItems: "center",
+        //         // overflow: "scroll"
+            }}
+        >
             <div className='coming_soon_body'>
                 <h2>COMING SOON, THICK & FAST !!!</h2>
             </div>
@@ -29,7 +40,7 @@ const ComingSoon = () => {
                     <li><a href='https://github.com/Teddykavooh/BetIQPro'>BetIQPro</a></li>
                 </ul>
             </p>
-        </>
+        </div>
     )
 }
 

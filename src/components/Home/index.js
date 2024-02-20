@@ -85,7 +85,8 @@ const Home = () => {
         <img
           src={LogoTitle}
           alt="A"
-          style={{ width: '24px', height: '24px', marginRight: '5px' }}
+          // style={{ width: 'auto', height: '8vh', marginRight: '1vw' }}
+          // className='smallA'
         />
         ntony
       </span>
@@ -113,63 +114,65 @@ const Home = () => {
       {/* <HeaderImage /> */}
       <div className="container home-page">
         <div className="text-zone">
-          <h1>
-            {/* <span className={letterClass}>H</span>
-            <span className={`${letterClass} _12`}>i,</span> */}
-            {/* <span className={`${letterClass} _12`}>
-              {greetingsOpt}
-            </span> */}
-            <AnimatedLetters
-              letterClass={letterClass}
-              strArray={greetingsOpt}
-              idx={12}
-            />
-            {/* Hi, I'm legendary */}
-            <br />
-            <span className={`${letterClass} _13`}>I</span>
-            <span className={`${letterClass} _14`}>'m</span>
-            <img src={LogoTitle} alt="a-logo" />
-            <AnimatedLetters
-              letterClass={letterClass}
-              strArray={nameArray}
-              idx={15}
-            />
-            {/* <span className={`${letterClass} _13`}>{catchyPhrase}</span> */}
-            {/* <span className={`${letterClass} _14`}>'m</span> */}
-            <br />
-            <AnimatedLetters
-              letterClass={letterClass}
-              strArray={jobArray}
-              idx={20}
-            />
-          </h1>
-          {/* New version */}
-          <br />
-          <h1 className='smaller'>
-            {/* <AnimatedLetters
-              letterClass={letterClass}
-              strArray={greetingsOpt}
-              idx={12}
-            />
-            <br /> */}
-            {/* <AnimatedLetters
-              letterClass={letterClass}
-              strArray={MeIntros}
-              idx={14}
-            /> */}
+          <div className="tz-c1">
+            <h1>
+              {/* <span className={letterClass}>H</span>
+              <span className={`${letterClass} _12`}>i,</span> */}
+              {/* <span className={`${letterClass} _12`}>
+                {greetingsOpt}
+              </span> */}
+              <AnimatedLetters
+                letterClass={letterClass}
+                strArray={greetingsOpt}
+                idx={12}
+              />
+              {/* Hi, I'm legendary */}
+              <br />
+              <span className={`${letterClass} _13`}>I</span>
+              <span className={`${letterClass} _14`}>'m</span>
+              <img src={LogoTitle} alt="a-logo" />
+              <AnimatedLetters
+                letterClass={letterClass}
+                strArray={nameArray}
+                idx={15}
+              />
+              {/* <span className={`${letterClass} _13`}>{catchyPhrase}</span> */}
+              {/* <span className={`${letterClass} _14`}>'m</span> */}
+              <br />
+              <AnimatedLetters
+                letterClass={letterClass}
+                strArray={jobArray}
+                idx={20}
+              />
+            </h1>
+            {/* New version */}
             {/* <br /> */}
-            <AnimatedLetters
-              letterClass={letterClass}
-              strArray={descriptionOpt}
-              idx={41}
-              glow={true}
-            />
-            <AnimatedLetters
-              letterClass={letterClass}
-              strArray={descriptionMain}
-              idx={58}
-            />
-          </h1>
+            <h1 className='smaller'>
+              {/* <AnimatedLetters
+                letterClass={letterClass}
+                strArray={greetingsOpt}
+                idx={12}
+              />
+              <br /> */}
+              {/* <AnimatedLetters
+                letterClass={letterClass}
+                strArray={MeIntros}
+                idx={14}
+              /> */}
+              {/* <br /> */}
+              <AnimatedLetters
+                letterClass={letterClass}
+                strArray={descriptionOpt}
+                idx={41}
+                glow={true}
+              />
+              <AnimatedLetters
+                letterClass={letterClass}
+                strArray={descriptionMain}
+                idx={58}
+              />
+            </h1>
+          </div>
           <h2>
             Frontend & Backend Developer/ JavaScript,Python and Android-Java
             Expert

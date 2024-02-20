@@ -1,8 +1,11 @@
+@use '../../App.scss';
+
 .logo-container {
   z-index: 0;
-  width: 30%;
-  // height: 500px;
-  // position: relative;
+  width: 38%;
+  height: 100%;
+  position: relative;
+  align-items: center;
   // top: 0;
   // right: 10%;
   // bottom: 0;
@@ -12,6 +15,7 @@
   // border: 2px solid #FFF;
   opacity: 0;
   display: flex;
+  justify-content: center;
 
   // svg {
   //   width: 100%;
@@ -21,15 +25,33 @@
   // }
 
   .solid-logo {
-    // position: relative;
+    position: relative;
     // top: auto;
     // right: auto;
     // bottom: auto;
     // left: 0;
     // margin: auto;
+    // transform: translateY(-50%);
     width: 100%;
-    height: 100%;
+    height: 85%;
     opacity: 0;
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    // display: none;
+    z-index: 2;
+  }
+
+  .custom-border {
+    width: 80%;
+    height: 100%;
+    border: 2vw solid App.$secondary-color;
+    border-top-right-radius: 20%;
+    border-bottom-left-radius: 20%;
+    z-index: 1;
+    position: absolute;
+    top: 0vw;
+    left: -5vw;
+    margin: auto;
   }
 }
 
@@ -38,31 +60,51 @@
 //   stroke-width: 10px;
 // }
 
-@media only screen and (max-width: 1400px) {
+// @media only screen and (max-width: 1400px) {
+//   .logo-container {
+//     right: 5%;
+//   }
+// }
+
+// @media only screen and (max-width: 1280px) {
+//   .logo-container {
+//     right: 2%;
+//     width: 30%;
+//     height: 65%;
+//     // border: 2px solid black;
+//   }
+// }
+
+// @media only screen and (max-width: 1024px) {
+//   .logo-container {
+//     right: 1%;
+//     width: 34%;
+//     height: 62%;
+//   }
+// }
+
+// @media only screen and (max-width: 992px) {
+//   .logo-container {
+//     width: 360px;
+//   }
+// }
+
+@media only screen and (max-width: 700px) {
   .logo-container {
-    right: 5%;
+    height: 50vw;
+    width: auto;
+    // border: 2px solid yellow;
+
+    .solid-logo {
+      width: 80%;
+    }
   }
 }
 
-@media only screen and (max-width: 1280px) {
-  .logo-container {
-    right: 2%;
-    width: 30%;
-    height: 65%;
-    // border: 2px solid black;
-  }
-}
-
-@media only screen and (max-width: 1024px) {
-  .logo-container {
-    right: 1%;
-    width: 34%;
-    height: 62%;
-  }
-}
-
-@media only screen and (max-width: 992px) {
-  .logo-container {
-    width: 360px;
-  }
-}
+// @media only screen and (max-width: 500px) {
+//   .logo-container {
+//     height: 60vw;
+//     width: 50vw;
+//     align-self: center;
+//   }
+// }

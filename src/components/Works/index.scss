@@ -1,1 +1,13 @@
 @use '../../App.scss';
+
+.works-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // border: 2px solid aquamarine;
+  // padding: 1vw;
+  // justify-content: space-evenly;
+  // overflow: scroll;
+  // max-height: 100vh; /* Set maximum height to the viewport height */
+  // overflow-y: auto; /* Add scrollbar if content overflows */
+}

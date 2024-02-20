@@ -1,5 +1,5 @@
 import './index.scss'
-import LogoS from '../../assets/images/logo-a-big.png'
+import LogoS from '../../assets/images/pp-min2.jpg'
 import { useRef } from 'react'
 import { useEffect } from 'react'
 import gsap from 'gsap-trial'
@@ -13,10 +13,17 @@ const Logo = () => {
   // Disable svg drawing`
   useEffect(() => {
     // gsap.registerPlugin(DrawSVGPlugin)
-    gsap.timeline().to(bgRef.current, {
-      duration: 1,
-      opacity: 1,
-    })
+    gsap.timeline().to(
+      bgRef.current,
+      // {
+      //   opacity: 0,
+      // },
+      {
+        duration: 3,
+        delay: 2,
+        opacity: 1,
+      }
+    )
     // .from(outlineLogoRef.current, {
     //   drawSVG: 0,
     //   duration: 20,
@@ -37,6 +44,7 @@ const Logo = () => {
   return (
     <div className="logo-container" ref={bgRef}>
       <img className="solid-logo" src={LogoS} alt="AK" ref={solidLogoRef} />
+      <div className="custom-border" ref={bgRef}></div>
       {/* Disable svg drawing */}
       {/* <svg
         width="559pt"

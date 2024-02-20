@@ -9,62 +9,76 @@
 .home-page {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  
+  justify-content: space-between;
+  gap: 5vw;
+
   .text-zone {
     // position: relative;
     // left: 12%;
     // top: 50%;
     // Dead centre
     // transform: translateY(-50%);
-    width: 65%;
+    width: 58%;
     height: 100%;
     z-index: 1;
     overflow: auto;
     // border: 2px solid #FFF;
-    padding: 1vh 1.5vw;
+    padding-left: 1.5vh;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    justify-content: space-evenly;
+    // align-items: center;
 
-    .smaller {
-      font-size: 6vh;
-    }
+    .tz-c1 {
+      // border: 2px solid #fff;
+      display: flex;
+      flex-direction: column;
+      gap: 1vh;
+      justify-content: space-between;
 
-    h1 {
-      color: App.$text-primary-color;
-      font-size: 8vh;
-      margin: 0;
-      font-family: 'Coolvetica';
-      font-weight: 400;
+      h1 {
+        color: App.$text-primary-color;
+        font-size: 6vh;
+        margin: 0;
+        font-family: 'Coolvetica';
+        font-weight: 400;
 
-      &::before {
-        content: '<h1>';
-        font-family: 'La Belle Aurore';
-        color: App.$primary-color;
-        font-size: 18px;
-        position: absolute;
-        left: 2%;
-        margin-top: -1vh;
-        // top: 10%;
-        opacity: 0.6;
+        &::before {
+          content: '<h1>';
+          font-family: 'La Belle Aurore';
+          color: App.$primary-color;
+          font-size: 2vw;
+          position: absolute;
+          left: 2%;
+          margin-top: -1vh;
+          // top: 10%;
+          opacity: 0.6;
+        }
+
+        &::after {
+          content: '</h1>';
+          font-family: 'La Belle Aurore';
+          color: App.$primary-color;
+          font-size: 2vw;
+          position: relative;
+          margin-left: 2%;
+          animation: fadeIn 1s 1.7s backwards;
+          opacity: 0.6;
+        }
+
+        img {
+          width: auto;
+          margin-left: 1vw;
+          opacity: 0;
+          height: 8vh;
+          animation: rotateIn 1s linear both;
+          animation-delay: 1.4s;
+        }
       }
 
-      &::after {
-        content: '</h1>';
-        font-family: 'La Belle Aurore';
-        color: App.$primary-color;
-        font-size: 18px;
-        position: relative;
-        margin-left: 2%;
-        animation: fadeIn 1s 1.7s backwards;
-        opacity: 0.6;
-      }
-
-      img {
-        width: 50px;
-        margin-left: 20px;
-        opacity: 0;
-        height: auto;
-        animation: rotateIn 1s linear both;
-        animation-delay: 1.4s;
+      .smaller {
+        font-size: 4vh;
       }
     }
 
@@ -72,7 +86,7 @@
       color: App.$secondary-color;
       margin-top: 20px;
       font-weight: 500;
-      font-size: 15px;
+      font-size: 2.5vh;
       font-family: sans-serif;
       letter-spacing: 3px;
       animation: fadeIn 1s 1.8s backwards;
@@ -91,6 +105,8 @@
       float: left;
       animation: fadeIn 1s 1.8s backwards;
       white-space: nowrap;
+      width: 140px;
+      text-align: center;
 
       &:hover {
         background: App.$primary-color;
@@ -100,46 +116,124 @@
   }
 }
 
-@media only screen and (max-width: 1200px) {
-  .home-page {
-    .text-zone {
-      width: 51%;
-      // border: 2px solid yellow;
-    }
-  }
-}
+// @media only screen and (max-width: 1400px) {
+//   .home-page {
+//     // gap: 4vw;
+//     .text-zone {
+//       // width: 51%;
+//       // border: 2px solid yellow;
+//     }
+//   }
+// }
 
-@media only screen and (max-width: 992px) {
-  .home-page {
-    .text-zone {
-      left: 3%;
-      width: 60%;
-    }
-  }
-}
+// @media only screen and (max-width: 992px) {
+//   .home-page {
+//     .text-zone {
+//       left: 3%;
+//       width: 60%;
+//     }
+//   }
+// }
 
-@media only screen and (max-width: 886px) {
-  .home-page {
-    .text-zone {
-      right: 3%;
-      width: 90%;
-      // border: 10px solid blue;
-      // margin: auto;
-    }
-  }
+// @media only screen and (max-width: 886px) {
+//   .home-page {
+//     .text-zone {
+//       right: 3%;
+//       width: 90%;
+//       // border: 10px solid blue;
+//       // margin: auto;
+//     }
+//   }
 
-  .logo-container {
-    filter: brightness(50%);
-    // background: rgba($color: App.$primary-dark-color2, $alpha: 0.5);
-    // display: none;
+//   .logo-container {
+//     filter: brightness(50%);
+//     // background: rgba($color: App.$primary-dark-color2, $alpha: 0.5);
+//     // display: none;
+//   }
+// }
+
+@media only screen and (max-width: 700px) {
+  .home-page {
+    height: 100%;
+    flex-direction: row-reverse;
+    gap: 0vw;
+    justify-content: center;
+    overflow: scroll;
+    // border: 2px solid aquamarine;
+    .text-zone {
+      width: 70%;
+      height: auto;
+      overflow: hidden;
+      justify-content: center;
+      // overflow-y: scroll;
+      .tz-c1 {
+        h1 {
+          font-size: 4vh;
+
+          img {
+            height: 4vh;
+          }
+        }
+        .smaller {
+          font-size: 3vh;
+        }
+      }
+      h2 {
+        font-size: 2vh;
+      }
+    }
   }
 }
 
 @media only screen and (max-width: 500px) {
   .home-page {
+    // border: 2px solid aquamarine;
+    display: inline-block;
+    // align-items: center;
+    padding: 1vh 1vw 0vh;
+    // margin: auto;
     .text-zone {
-      h1 {
-        font-size: 4vh;
+      width: 100%;
+      // margin: auto;
+      .tz-c1 {
+        h1 {
+          font-size: 4vh;
+
+          img {
+            height: 4vh;
+          }
+        }
+        .smaller {
+          font-size: 3vh;
+        }
+      }
+      h2 {
+        font-size: 1.8vh;
+      }
+    }
+    .logo-container {
+      height: 60vw;
+      width: 50vw;
+      align-self: center;
+      margin: 1vh auto;
+    }
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .home-page {
+    .text-zone {
+      .tz-c1 {
+        h1 {
+          font-size: 3vh;
+
+          img {
+            height: 3vh;
+          }
+        }
+        .smaller {
+          font-size: 2.5vh;
+        }
       }
       h2 {
         font-size: 1.5vh;
@@ -148,27 +242,23 @@
   }
 }
 
-@media only screen and (max-width: 376px) {
-  .home-page {
-    .text-zone {
-      h1 {
-        font-size: 3.8vh;
-      }
-      h2 {
-        font-size: 1.45vh;
-      }
-    }
-  }
-}
-
 @media only screen and (max-width: 359px) {
   .home-page {
     .text-zone {
-      h1 {
-        font-size: 3vh;
+      .tz-c1 {
+        h1 {
+          font-size: 3.6vh;
+
+          img {
+            height: 3.6vh;
+          }
+        }
+        .smaller {
+          font-size: 2.3vh;
+        }
       }
       h2 {
-        font-size: 1.4vh;
+        font-size: 1.3vh;
       }
     }
   }
@@ -177,8 +267,14 @@
 @media only screen and (max-width: 281px) {
   .home-page {
     .text-zone {
-      h1 {
-        font-size: 2.8vh;
+      .tz-c1 {
+        h1 {
+          font-size: 2.8vh;
+
+          img {
+            height: 2.8vh;
+          }
+        }
       }
       h2 {
         font-size: 1.3vh;
