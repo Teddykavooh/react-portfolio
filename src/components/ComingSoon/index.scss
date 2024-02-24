@@ -147,6 +147,11 @@
   }
   .coming_soon_body{
     width: 85vw;
+    height: 10vh;
+
+    h2 {
+      font-size: 3vh;
+    }
   }
 }
 
@@ -162,7 +167,7 @@
 @media (max-width: 370px) {
   .coming_soon_body{
     // width: 80vw;
-    height: 20vh;
+    // height: 20vh;
   }
   .p_section{
     font-size: 1.2rem;
@@ -172,7 +177,7 @@
 @media (max-width: 320px) {
   .coming_soon_body{
     width: 95vw;
-    height: 25vh;
+    // height: 25vh;
   }
   .p_section{
     width: 95vw;

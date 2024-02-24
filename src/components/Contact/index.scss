@@ -92,18 +92,19 @@
   right: 1%;
   z-index: 2;
   width: auto;
-  padding: 20px;
+  padding: 1vw;
   color: App.$text-primary-color;
   font-family: 'Helvetica';
-  font-size: 15px;
+  font-size: 2vw;
   font-weight: 300;
   animation: fadeIn 1s 1.5s;
   animation-fill-mode: forwards;
 
   span {
-    font-size: 14px;
+    font-size: 2vw;
     display: block;
-    padding-top: 10px;
+    margin: 1vw 0;
+    // padding-top: 10px;
     color: App.$primary-color;
     font-weight: 700;
   }

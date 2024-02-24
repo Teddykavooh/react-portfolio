@@ -177,6 +177,9 @@
         .smaller {
           font-size: 3vh;
         }
+        h1::before {
+          left: 38%;
+        }
       }
       h2 {
         font-size: 2vh;
@@ -197,6 +200,37 @@
       // margin: auto;
       .tz-c1 {
         h1 {
+          font-size: 5vh;
+
+          img {
+            height: 5vh;
+          }
+        }
+        .smaller {
+          font-size: 4vh;
+        }
+        h1::before {
+          left: 2%;
+        }
+      }
+      h2 {
+        font-size: 2.3vh;
+      }
+    }
+    // .logo-container {
+    //   height: 60vw;
+    //   width: 50vw;
+    //   align-self: center;
+    //   margin: 1vh auto;
+    // }
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .home-page {
+    .text-zone {
+      .tz-c1 {
+        h1 {
           font-size: 4vh;
 
           img {
@@ -208,19 +242,35 @@
         }
       }
       h2 {
-        font-size: 1.8vh;
+        font-size: 2vh;
       }
-    }
-    .logo-container {
-      height: 60vw;
-      width: 50vw;
-      align-self: center;
-      margin: 1vh auto;
     }
   }
 }
 
-@media only screen and (max-width: 376px) {
+// @media only screen and (max-width: 359px) {
+//   .home-page {
+//     .text-zone {
+//       .tz-c1 {
+//         h1 {
+//           font-size: 3.6vh;
+
+//           img {
+//             height: 3.6vh;
+//           }
+//         }
+//         .smaller {
+//           font-size: 2.3vh;
+//         }
+//       }
+//       h2 {
+//         font-size: 1.3vh;
+//       }
+//     }
+//   }
+// }
+
+@media only screen and (max-width: 281px) {
   .home-page {
     .text-zone {
       .tz-c1 {
@@ -232,52 +282,11 @@
           }
         }
         .smaller {
-          font-size: 2.5vh;
+          font-size: 2vh;
         }
       }
       h2 {
-        font-size: 1.5vh;
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 359px) {
-  .home-page {
-    .text-zone {
-      .tz-c1 {
-        h1 {
-          font-size: 3.6vh;
-
-          img {
-            height: 3.6vh;
-          }
-        }
-        .smaller {
-          font-size: 2.3vh;
-        }
-      }
-      h2 {
-        font-size: 1.3vh;
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 281px) {
-  .home-page {
-    .text-zone {
-      .tz-c1 {
-        h1 {
-          font-size: 2.8vh;
-
-          img {
-            height: 2.8vh;
-          }
-        }
-      }
-      h2 {
-        font-size: 1.3vh;
+        font-size: 1.8vh;
       }
     }
   }

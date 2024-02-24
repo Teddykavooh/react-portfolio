@@ -27,29 +27,31 @@
     height: 70%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     border: 2px solid App.$primary-color;
     animation: backInRight 1s 1.2s;
     animation-fill-mode: forwards;
     align-items: center;
+    padding: 1vw;
+    // background-color: aliceblue;
 
     .logo {
       display: flex;
       flex-direction: column;
-      // padding: 8px 0;
+      // padding: 8px;
       border: 2px solid App.$primary-color;
       border-radius: 50%;
-      width: 40%;
-      min-width: 80px;
-      height: auto;
-      min-height: 80px;
+      width: 20vw;
+      height: 20vw;
+      min-width: 70px;
+      min-height: 70px;
       justify-content: center;
       align-items: center;
 
       img {
         position: relative;
-        width: calc(100% - 2px);
-        height: calc(100% - 2px);
+        width: calc(100% - 1vw);
+        height: calc(100% - 1vw);
         object-fit: cover;
         border-radius: 50%;
         object-position: center center; /* Adjust this value to zoom out and position the face */
@@ -73,11 +75,11 @@
       flex-direction: column;
       justify-content: center;
       position: relative;
-      height: 210px;
+      height: 25vh;
       width: 100%;
 
       a {
-        font-size: 22px;
+        font-size: 6vw;
         color: App.$secondary-color;
         display: flex;
         justify-content: center;
@@ -164,10 +166,12 @@
       width: 100%;
       list-style: none;
       text-align: center;
+      // padding: 7px 0;
+      // background-color: black;
 
       li {
         a {
-          padding: 7px 0;
+          // padding: 7px 0;
           display: flex;
           justify-content: center;
           font-size: 15px;
@@ -175,7 +179,7 @@
 
           svg {
             color: App.$secondary-color;
-            font-size: 24px;
+            font-size: 6vw;
           }
 
           &:hover svg {
@@ -225,10 +229,10 @@
   .menu_bar {
     .children-cont {
       .logo {
-        width: 90%;
-        height: 0;
-        padding-top: 90%; /* Set the padding-top to the same value as the width */
-        border: 2px solid App.$primary-color; /* Add border styles to the container */
+        width: 20vw;
+        height: 20vw;
+        // padding-top: 90%; /* Set the padding-top to the same value as the width */
+        // border: 2px solid App.$primary-color; /* Add border styles to the container */
         background-image: url('../../assets/images/pp-min-c.jpg');
         background-size: cover;
         background-position: center center;

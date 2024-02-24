@@ -101,10 +101,11 @@
   }
 }
 
-// @media only screen and (max-width: 500px) {
-//   .logo-container {
-//     height: 60vw;
-//     width: 50vw;
-//     align-self: center;
-//   }
-// }
+@media only screen and (max-width: 500px) {
+  .logo-container {
+    height: 70vw;
+    width: 65vw;
+    align-self: center;
+    margin: 4vh auto;
+  }
+}
