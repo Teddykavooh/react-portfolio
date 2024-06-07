@@ -27,6 +27,7 @@ const ComingSoon = () => {
                 <ul>
                     <h3>Web Development:</h3>
                     <li><a href='https://antonykavoo-portfolio.vercel.app/'>Where you are</a></li>
+                    <li><a href='https://ticket-pulse-frontend.vercel.app/'>TicketPouls</a></li>
                     <li><a href='https://teddykavooh.github.io/Disney-Clone/'>Disney Clone</a></li>
                     <li><a href='https://teddykavooh.github.io/Interpeace-Project/'>Interpeace</a></li>
                     <li><a href='https://teddykavooh.github.io/Emir/'>Travel Agency</a></li>
