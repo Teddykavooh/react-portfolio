@@ -169,7 +169,7 @@ const Home = () => {
               <AnimatedLetters
                 letterClass={letterClass}
                 strArray={descriptionMain}
-                idx={58}
+                idx={59}
               />
             </h1>
           </div>

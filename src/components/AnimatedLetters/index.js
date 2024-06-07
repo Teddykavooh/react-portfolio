@@ -7,7 +7,7 @@ const AnimatedLetters = ({ letterClass, strArray, idx, glow }) => {
     // console.log("letterClass: " + letterClass);
   }
   return (
-    <span>
+    <span className='span_parent'>
       {strArray.map((char, i) => (
         <span key={char + i} className={`${letterClass} _${i + idx}`}>
           {char}
