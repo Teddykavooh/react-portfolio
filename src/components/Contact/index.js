@@ -91,10 +91,8 @@ const Contact = () => {
         </div>
         <div className="map-wrap">
           <div className="info-map">
-            Antony Kavoo,
-            <br />
-            Murang'a, Kenya.
-            <br />
+            <p>Antony Kavoo,</p>
+            <p>Murang'a, Kenya.</p>
             <span>teddykavooh@gmail.com</span>
           </div>
           <MapContainer center={position} zoom={6.4} scrollWheelZoom={false}>

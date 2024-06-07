@@ -95,18 +95,22 @@
   padding: 1vw;
   color: App.$text-primary-color;
   font-family: 'Helvetica';
-  font-size: 2vw;
   font-weight: 300;
   animation: fadeIn 1s 1.5s;
   animation-fill-mode: forwards;
 
   span {
-    font-size: 2vw;
+    font-size: 2rem;
     display: block;
     margin: 1vw 0;
     // padding-top: 10px;
     color: App.$primary-color;
     font-weight: 700;
+  }
+
+  p {
+    font-size: 1rem;
+    color: #aad3df;
   }
 }
 
