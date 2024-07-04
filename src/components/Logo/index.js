@@ -3,6 +3,7 @@ import LogoS from '../../assets/images/pp-min2.jpg'
 import { useRef } from 'react'
 import { useEffect } from 'react'
 import gsap from 'gsap-trial'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 // import DrawSVGPlugin from 'gsap-trial/DrawSVGPlugin'
 
 const Logo = () => {
@@ -43,7 +44,24 @@ const Logo = () => {
 
   return (
     <div className="logo-container" ref={bgRef}>
-      <img className="solid-logo" src={LogoS} alt="AK" ref={solidLogoRef} />
+      {/* <LazyLoadImage
+        alt="AK"
+        src={LogoS}
+        // className="solid-logo"
+        effect="blur"
+        // ref={solidLogoRef}
+      /> */}
+      <div className="solid-logo" ref={solidLogoRef}>
+        {/* <img src={LogoS} alt="AK" /> */}
+        <LazyLoadImage
+          alt="AK"
+          src={LogoS}
+          height={"100%"}
+          width={"auto"}
+          className="solid-logo-child"
+          effect="blur"
+        />
+      </div>
       <div className="custom-border" ref={bgRef}></div>
       {/* Disable svg drawing */}
       {/* <svg
