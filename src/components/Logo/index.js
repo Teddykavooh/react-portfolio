@@ -3,7 +3,8 @@ import LogoS from '../../assets/images/pp-min2.jpg'
 import { useRef } from 'react'
 import { useEffect } from 'react'
 import gsap from 'gsap-trial'
-import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { LazyLoadImage } from 'react-lazy-load-image-component'
+import PlaceHolderImage from '../../assets/images/pp-min2-min_init.jpg'
 // import DrawSVGPlugin from 'gsap-trial/DrawSVGPlugin'
 
 const Logo = () => {
@@ -56,10 +57,19 @@ const Logo = () => {
         <LazyLoadImage
           alt="AK"
           src={LogoS}
-          height={"100%"}
-          width={"auto"}
+          // height={"100%"}
+          // width={"auto"}
           className="solid-logo-child"
           effect="blur"
+          wrapperProps={{
+            // If you need to, you can tweak the effect transition using the wrapper style.
+            style: {
+              transitionDelay: "1s"
+            },
+          }}
+          // beforeLoad={console.log("Image not yet!!")}
+          // onLoad={console.log("Image loaded !!!")}
+          placeholderSrc={PlaceHolderImage}
         />
       </div>
       <div className="custom-border" ref={bgRef}></div>
