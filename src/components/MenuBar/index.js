@@ -11,6 +11,8 @@ import {
   faGithub,
   faStackOverflow,
 } from '@fortawesome/free-brands-svg-icons'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
+import AvatarPlaceHolderImage from '../../assets/images/pp-min-c-min_init.jpg'
 
 const MenuBar = () => {
   const [menu_class, setMenuClass] = useState('menu_bar hidden')
@@ -44,7 +46,19 @@ const MenuBar = () => {
       <div className={menu_class}>
         <div className="children-cont">
           <Link className="logo" to="/" onClick={hidder}>
-            <img src={LogoS} alt="logo" />
+            {/* <img src={LogoS} alt="logo" /> */}
+            <LazyLoadImage 
+              src={LogoS}
+              alt='avatar'
+              placeholder={AvatarPlaceHolderImage}
+              effect="blur"
+          wrapperProps={{
+            // If you need to, you can tweak the effect transition using the wrapper style.
+            style: {
+              transitionDelay: "1s"
+            },
+          }}
+            />
             {/* <img className="sub-logo" src={LogoSubtitle} alt="logo_sub" /> */}
           </Link>
           <nav>
