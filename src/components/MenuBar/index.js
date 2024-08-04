@@ -46,19 +46,23 @@ const MenuBar = () => {
       <div className={menu_class}>
         <div className="children-cont">
           <Link className="logo" to="/" onClick={hidder}>
-            {/* <img src={LogoS} alt="logo" /> */}
-            <LazyLoadImage 
-              src={LogoS}
-              alt='avatar'
-              placeholder={AvatarPlaceHolderImage}
-              effect="blur"
-          wrapperProps={{
-            // If you need to, you can tweak the effect transition using the wrapper style.
-            style: {
-              transitionDelay: "1s"
-            },
-          }}
-            />
+            <img src={LogoS} alt="logo" />
+            {/* <div className="avatar_img">
+              <LazyLoadImage
+                src={LogoS}
+                alt='avatar'
+                placeholder={AvatarPlaceHolderImage}
+                effect="blur"
+                wrapperProps={{
+                  // If you need to, you can tweak the effect transition using the wrapper style.
+                  style: {
+                    transitionDelay: "1s",
+                    objectFit: "cover",
+                    objectPosition: "center center"
+                  },
+                }}
+              />
+            </div> */}
             {/* <img className="sub-logo" src={LogoSubtitle} alt="logo_sub" /> */}
           </Link>
           <nav>
