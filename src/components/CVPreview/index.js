@@ -2,7 +2,7 @@ import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 import { useEffect, useState } from 'react'
 import Loader from 'react-loaders'
-import CVPDF from '../../../public/Antony_Kavoo_CV.pdf'
+import CVPDF from '../../assets/Antony_Kavoo_CV.pdf'
 
 const CVPreview = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
