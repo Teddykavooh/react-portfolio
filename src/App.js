@@ -7,6 +7,7 @@ import About from './components/About'
 import Contact from './components/Contact'
 import Trials from './components/Trials'
 import { Works } from "./components/Works"
+import { CVPreview } from "./components/CVPreview";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
         <Route path="about" element={<About />} />
+        <Route path="cv-preview" element={<CVPreview />} />
         <Route path="works" element={<Works />} />
         <Route path="contact" element={<Contact />} />
       </Route>
