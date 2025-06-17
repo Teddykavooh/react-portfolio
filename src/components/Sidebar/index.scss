@@ -96,6 +96,14 @@
       }
     }
 
+    a.cv-preview-link {
+      &::after {
+        content: 'CV';
+        font-size: 1.3rem;
+        font-weight: 700;
+      }
+    }
+
     a.contact-link {
       &::after {
         content: 'CONTACT';
