@@ -37,7 +37,6 @@ const Sidebar = () => {
           activeclassname="active"
           to="/cv-preview"
           className="cv-preview-link"
-          onClick={hidder}
         >
           <FontAwesomeIcon icon={faFile} />
         </NavLink>
