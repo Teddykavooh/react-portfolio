@@ -47,7 +47,7 @@ const About = () => {
           </p>
           <p>
             For more details about my professional experience and background, you can
-            <a href="https://drive.google.com/file/d/1Ygax5bfbYgz2lVHaEo4QIr61ca0kIeW6/view?usp=drive_link" class="text-blue-600 underline hover:text-blue-800">View my CV</a>.
+            <a href="https://drive.google.com/file/d/1Ygax5bfbYgz2lVHaEo4QIr61ca0kIeW6/view?usp=drive_link" className="cv-link"> View my CV</a>.
           </p>
         </div>
         <div className="stage-cube-cont">
