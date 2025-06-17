@@ -24,15 +24,6 @@ const CVPreview = () => {
                 idx={15}
               />
             </h1>
-          </div>
-          <div className="cv-preview">
-            <iframe 
-                // src="https://drive.google.com/file/d/1Ygax5bfbYgz2lVHaEo4QIr61ca0kIeW6/view"
-                src={CVPDF}
-                width="100%" 
-                height="600"
-                allow="autoplay">
-            </iframe>
             <p>
                 <a 
                     href="https://drive.google.com/file/d/1Ygax5bfbYgz2lVHaEo4QIr61ca0kIeW6/view?usp=drive_link"
@@ -44,6 +35,15 @@ const CVPreview = () => {
                     Download CV
                 </a>
             </p>
+          </div>
+          <div className="cv-preview">
+            <iframe 
+                // src="https://drive.google.com/file/d/1Ygax5bfbYgz2lVHaEo4QIr61ca0kIeW6/view"
+                src={CVPDF}
+                width="350vw" 
+                height="100%"
+                allow="autoplay">
+            </iframe>
           </div>
         </div>
         <Loader type="pacman" />
