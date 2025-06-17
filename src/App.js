@@ -7,7 +7,7 @@ import About from './components/About'
 import Contact from './components/Contact'
 import Trials from './components/Trials'
 import { Works } from "./components/Works"
-import { CVPreview } from "./components/CVPreview";
+import CVPreview from "./components/CVPreview";
 
 function App() {
   return (
