@@ -10,4 +10,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    a {
+        color: App.$primary-color;
+        text-decoration: underline;
+        font-weight: bold;
+        font-style: italic;
+  
+        :hover {
+          scale: 1.5;
+        }
+    }
 }
