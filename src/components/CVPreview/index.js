@@ -26,7 +26,7 @@ const CVPreview = () => {
           </div>
           <div className="cv-preview">
             <iframe 
-                src="href="https://drive.google.com/file/d/1Ygax5bfbYgz2lVHaEo4QIr61ca0kIeW6/view" 
+                src="https://drive.google.com/file/d/1Ygax5bfbYgz2lVHaEo4QIr61ca0kIeW6/view" 
                 width="100%" 
                 height="600"
                 allow="autoplay">
