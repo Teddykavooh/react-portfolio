@@ -1,25 +1,54 @@
 @use '../../App.scss';
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.cv-preview {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
-
-    a {
+.cv-preview-page {
+  .text-zone {
+    p {
+      a {
         color: App.$primary-color;
         text-decoration: underline;
         font-weight: bold;
         font-style: italic;
-  
+
         :hover {
           scale: 1.5;
         }
+      }
     }
+  }
+  .cv-preview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    border: 0.2rem solid App.$extra-color;
+  }
+}
+
+@media only screen and (max-width: 714px) {
+  .cv-preview-page {
+    flex-direction: column;
+
+    .text-zone {
+      width: 100% !important;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+
+      h1 {
+        margin-bottom: 20px;
+      }
+    }
+    .cv-preview {
+      overflow-y: scroll;
+      width: 100%;
+      height: auto;
+    }
+  }
 }

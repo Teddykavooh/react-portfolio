@@ -46,8 +46,17 @@ const About = () => {
             an environment and technology enthusiast.
           </p>
           <p>
-            For more details about my professional experience and background, you can 
-            <a href="https://drive.google.com/file/d/1Ygax5bfbYgz2lVHaEo4QIr61ca0kIeW6/view?usp=drive_link" className="cv-link" target="_blank">view my CV</a>.
+            For more details about my professional experience and background,
+            you can &thinsp;
+            <a
+              href="https://drive.google.com/file/d/1Ygax5bfbYgz2lVHaEo4QIr61ca0kIeW6/view?usp=drive_link"
+              className="cv-link"
+              target="_blank"
+              rel="noreferrer"
+            >
+              view my CV
+            </a>
+            .
           </p>
         </div>
         <div className="stage-cube-cont">
